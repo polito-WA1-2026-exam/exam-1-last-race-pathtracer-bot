@@ -2,51 +2,7 @@
 
 ## Student
 
-TODO: replace this line with your student ID, surname, and name.
-
-## Project Overview
-
-Last Race is a single-player metro route-planning game. A registered player
-studies the complete metro network, receives two stations at least three
-segments apart, and has 90 seconds to reconstruct a valid route from a list of
-segments. The server validates the route, applies a random event to every
-travelled segment, stores the result, and updates the general ranking.
-
-The project uses React and React Router on the client, and Express, Passport,
-session cookies, and SQLite on the server.
-
-## Running the Application
-
-Use Node.js 24.x LTS. The repository declares this requirement in
-`client/package.json`, `server/package.json`, `.nvmrc`, `.node-version`, and
-the npm configuration rejects other major versions.
-
-Install dependencies and initialize the SQLite database once:
-
-```bash
-cd server
-npm install
-npm run db:init
-cd ../client
-npm install
-```
-
-Then start the API server:
-
-```bash
-cd server
-nodemon index.js
-```
-
-In a second terminal, start the React client:
-
-```bash
-cd client
-npm run dev
-```
-
-The client runs at `http://localhost:5173` and the API server at
-`http://localhost:3001`.
+s353172, Jiang Lingxiao
 
 ## React Client Application Routes
 
@@ -219,6 +175,5 @@ OpenAI Codex/ChatGPT was used to interpret the exam specification, plan the
 database/API/component structure, generate and refactor portions of the code,
 and assist with debugging and test design. The generated output was reviewed
 and adapted to the project requirements. The final implementation was checked
-with database consistency checks, authenticated API smoke tests, ESLint, and a
-Vite production build; the README screenshots were captured from the running
-application.
+with database consistency checks, the README screenshots were captured from 
+the running application.
