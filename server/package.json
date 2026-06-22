@@ -5,11 +5,31 @@
   "license": "ISC",
   "author": "",
   "type": "module",
+  "engines": {
+    "node": ">=24.0.0 <25.0.0"
+  },
   "main": "index.js",
   "scripts": {
+    "check:node": "node check-node-version.mjs",
+    "prestart": "npm run check:node",
+    "start": "node index.js",
+    "predev": "npm run check:node",
+    "dev": "nodemon index.js",
+    "predb:init": "npm run check:node",
+    "db:init": "node init_db.js",
+    "predb:check": "npm run check:node",
+    "db:check": "node check_db.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
-    "express": "^5.2.1"
+    "cors": "^2.8.6",
+    "express": "^5.2.1",
+    "express-session": "^1.19.0",
+    "passport": "^0.7.0",
+    "passport-local": "^1.0.0",
+    "sqlite3": "^6.0.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
   }
 }
